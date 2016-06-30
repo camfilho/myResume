@@ -1,0 +1,35 @@
+#citation {
+  display: inline-block;
+  margin-top: 10%;
+}
+.i {
+  float: left;
+  margin: 0px;
+  background-color: red;
+}
+blockquote {
+  border: none;
+  padding: 0em 2em;
+  margin: 0em 2em;
+}
+.fa-quote-left {
+	color: #444;
+	background: #FF5252;
+	border: 5px solid #FF5252;
+	padding: 10px 12px;
+	border-radius: 100%;	
+}
+.well {
+  background-color: #8BC34A;
+}
+body {
+  background-color: #DCEDC8;
+}
+.btn {
+  background-color: #DCEDC8;
+}
+.btn-group {
+ margin: 0px !important;
+  padding: 0px !important;
+  float:left;
+}
