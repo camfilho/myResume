@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>RandomQuote</title>
-    
-    
-    
+
+
+
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 
         <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
 
-    
-    
-    
+
+
+
   </head>
 
   <body>
@@ -26,27 +26,30 @@
           <i class="fa fa-quote-left fa-3x wel" aria-hidden="true"></i>
         </div>
         <div class="col-xs-12">
-          <blockquote>
-	<h3 class="text-center">Something really amazing goes here</h3>
-    <footer>Author</footer>
-          </blockquote>
+          <div class="blockquote">
+	<h3 class="text-center">{{ content }}</h3>
+    <footer class="text-right">{{ author }}</footer>
+        </div>
           <div class="btn-group">
-             <button class="btn btn-default" id="atualizarQuote"><i class="fa fa-refresh fa-2x"></i></button>
-            <a href="" target="_blank" id="btnTweet">
+            <a href="/ramq">
+              <button class="btn btn-default" id="atualizarQuote"><i class="fa fa-refresh fa-2x"></i></button>
+              </a>
+            <a href="{{ twitter }}" target="_blank" id="btnTweet">
             <button  class="btn btn-default" ><i class="fa fa-twitter fa-2x"></i> </button></a>
           </div>
-          
-        </div>        
-      </div>
+
+        </div>
+  
+    </div>
     </div>
   </div>
 </body>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-        <script src="{{ url_for('static',filename='js/quote.js') }}"></script>
+        <script src="js/index.js"></script>
 
-    
-    
-    
+
+
+
   </body>
 </html>
