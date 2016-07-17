@@ -78,6 +78,9 @@ h2 {
 nav {
   padding-bottom: 2cm;
 }
+.card-title{
+    
+}
 .card-image {
     height: 100%;
 }
