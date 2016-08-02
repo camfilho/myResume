@@ -2,28 +2,80 @@
 
 {% block content %}
 
-
-  <div class="container">
-    <div id="about" class="row">
+<div class="cont">
+  <!-- About Section -->
+  <div id="abt">
+    <div id="about" class="row container">
       <div class="col s12 m12">
         <h2 class="header indigo-text lighten-1 section-title">
           <span ><i class="small material-icons">visibility</i>Sobre Mim </span><div class="divider"></div>
         </h2>
-        <p class="flow-text" align="justify">Olá! Me chamo <strong class="indigo-text  darken-4">Carlos Augusto de Medeiros Filho</strong>. Sou <strong> Desenvolvedor Web</strong> e Python lover. Estudo <strong class="indigo-text lighten-1">Engenharia Elétrica</strong> na Universidade Federal do Rio Grande do Norte.
+        <p class="flow-text" align="justify">Olá! Me chamo <strong class="indigo-text  darken-4">Carlos Augusto de Medeiros Filho</strong>. Sou <strong> Desenvolvedor Web</strong>, estudante de <strong class="indigo-text lighten-1">Engenharia Elétrica</strong> na Universidade Federal do Rio Grande do Norte e <strong>Python</strong> <strong>lover</strong>.
         Também sou mensageiro e estudante do <strong style="color: #212121;"> Free Code Camp</strong>, uma comunidade internacional que visa ensinar programação e construir projetos para ONGs.</p>
       </div>
-
+<!--
       <div style="display: none; visibility: hidden;" class="col s4 m4">
         <h2 class="header indigo-text lighten-1 section-title">
           <span><i class="small material-icons">perm_identity</i>That's Me </span><div class="divider"></div>
           <div id="tuite"></div>
         </h2>
         </div>
+      </div> -->
+  </div>
+
+  <!-- Curriculo -->
+<div id="curriculo" class="wrap grey lighten-3">
+  <div class="row container">
+    <div class="col s4 m4">
+      <h2 class="header indigo-text lighten-1 section-title">
+        <span><i class="small material-icons">dashboard</i>Download Currículo </span><div class="divider"></div></h2>
+        <p class="black-text">Download meu currículo em PDF</p>
+        <a href="https://drive.google.com/open?id=0B37iXarB1qIpUnA1SFoyNDR2N1U" target="_blank" class="waves-effect waves-light btn indigo"> Download</a>
       </div>
+      <div class="col s8 m8">
+        <h2 class="header indigo-text lighten-1 section-title">
+          <span><i class="small material-icons">dashboard</i>Programação </span><div class="divider"></div></h2>
+            <div class="chip indigo white-text">Python</div>
+            <div class="chip indigo white-text">Linux</div>
+            <div class="chip indigo white-text">HTML5</div>
+            <div class="chip indigo white-text">CSS</div>
+            <div class="chip indigo white-text">JavaScript</div>
+            <div class="chip indigo white-text">jQuery</div>
+            <div class="chip indigo white-text">Flask</div>
+            <div class="chip indigo white-text">GIT</div>
+            <div class="chip indigo white-text">Angular</div>
+            <div class="chip indigo white-text">SQL</div>
+            <div class="chip indigo white-text">C/C++</div>
+        </div>
+  </div>
+  <div class="row container">
+    <div class="col s4 m4">
+      <h2 class="header indigo-text lighten-1 section-title">
+        <span><i class="small material-icons">dashboard</i>LinkedIn </span><div class="divider"></div></h2>
+        <p>Conecte-se comigo através do LinkedIn</p>
+        <a href="https://www.linkedin.com/in/carlos-augusto-de-medeiros-filho-2b3283a4" target="_blank" class="waves-effect waves-light btn indigo"> LinkedIn</a>
+
+    </div>
+    <div class="col s8 m8">
+      <h2 class="header indigo-text lighten-1 section-title">
+        <span><i class="small material-icons">dashboard</i>Habilidade Pessoais </span><div class="divider"></div></h2>
+        <div class="chip indigo white-text">Responsável</div>
+        <div class="chip indigo white-text">Confiável</div>
+        <div class="chip indigo white-text">Auto-didata</div>
+        <div class="chip indigo white-text">Trabalha em Equipe</div>
+        <div class="chip indigo white-text">Flexível</div>
+        <div class="chip indigo white-text">Positivo</div>
+        <div class="chip indigo white-text">Criativo</div>
+    </div>
+  </div>
+</div>
+
+  <!-- Portfolio Section -->
+  <div id="port" class="wrap container">
       <div id="portfolio" class="row">
         <div class="col s12 m12">
           <h2 class="header indigo-text lighten-1 section-title">
-            <span><i class="small material-icons">dashboard</i>Portfólio </span><div class="divider"></div></h2>
+            <span><i class="small material-icons">description</i>Portfólio </span><div class="divider"></div></h2>
           </div>
         </div>
         <div class="row">
@@ -37,7 +89,7 @@
                 <p>Pequeno projeto em que utilizei Bootstrap/HTML/CSS e requisição de dados utilizando jQuery/Javascript  para um API gerador de Quotes</p>
               </div>
               <div class="card-action">
-                <a style="color: indigo;" href="/ramq">RandomQuoteGenerator</a>
+                <a style="color: indigo;" href="/ramq" target="_blank">RandomQuoteGenerator</a>
               </div>
             </div>
 
@@ -53,39 +105,41 @@
                 Design feito com o framework Materialize.</p>
               </div>
               <div class="card-action">
-                <a style="color: indigo;" href="http://codepen.io/cfmedeiros/full/qNmZwX/">Codepen.io</a>
+                <a style="color: indigo;" href="http://codepen.io/cfmedeiros/full/qNmZwX/" target="_blank">Codepen.io</a>
               </div>
             </div>
 
           </div>
         </div>
-        <div style="display: none; visibility: hidden; "class="row">
+        <div class="row">
           <div class="col s6 m6 l6">
-            <div class="card grey lighten-5 z-depth-1">
+            <div class="card grey lighten-5 z-depth-1 medium">
               <div class="card-image">
-                <img src="http://qlip.in/sites/default/files/600x393xYMCA-Realtor-Donation-3.jpeg.pagespeed.ic.vJV7L8HzF-.jpg" class="responsive-img">
-                <span class="card-title">Exemplo.com</span>
+                <img src="https://s32.postimg.org/y19pacvud/eko_Karona.png" class="responsive-img">
+                <span class="card-title black-text"><strong>Eko Carona</strong></span>
               </div>
               <div class="card-content">
-                <p>This is one of my projects</p>
+                <p>Plataforma facilitadora de Carona que busca uma rápida conexão entre quem oferece e quem precisa.
+                  Projeto sendo desenvolvido em Python + Flask e Materialize
+                </p>
               </div>
               <div class="card-action">
-                <a style="color: indigo;" href="#">Exemplo.com</a>
+                <a style="color: indigo;" target="_blank" href="https://github.com/carlosfilhomedeiros/EkoCarona.git">GitHub</a>
               </div>
             </div>
 
           </div>
           <div class="col s6 m6 l6">
-            <div class="card grey lighten-5 z-depth-1">
+            <div class="card grey lighten-5 z-depth-1 medium">
               <div class="card-image">
-                <img src="http://qlip.in/sites/default/files/600x393xYMCA-Realtor-Donation-3.jpeg.pagespeed.ic.vJV7L8HzF-.jpg" class="responsive-img">
-                <span class="card-title">Exemplo.com</span>
+                <img src="https://s31.postimg.org/mklgo1mez/curriculo.png" class="responsive-img">
+                <span class="card-title black-text"><strong>Página Pessoal</strong></span>
               </div>
               <div class="card-content">
-                <p>This is one of my projects</p>
+                <p>Página pessoal feita em Python+Flask como backend e Materialize front.</p>
               </div>
               <div class="card-action">
-                <a style="color: indigo;" href="#">Exemplo.com</a>
+                <a style="color: indigo;" href="www.cfmedeiros.pythonanywhere.com">Página Pessoal</a>
               </div>
             </div>
 
@@ -95,6 +149,6 @@
           </div>
         </div>
       </div>
-
+</div>
 
 {% endblock %}
